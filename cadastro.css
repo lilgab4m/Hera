@@ -10,19 +10,22 @@
     
 
   }
+  
   .container {
     color: #ffffff;
 
   }
-  .titulo{
-    text-align: center;
-  }
+h2{
+    text-align:center;
+    font-size: 60px;
+}
   .form-group{
     max-width: 700px;
     justify-content: center;
     align-items: center;
 text-align: left;
 font-size: 20px;
+position: relative  ;
 
   }
   
@@ -48,4 +51,17 @@ h2 {
    color: rgb(255, 255, 255);
     align-items: center;
     text-align: center;
+    
 }
+
+.mt-3 a {
+    color: black; /* Define a cor do link para preto */
+    text-decoration: none; /* Remove sublinhado do link (opcional) */
+    font-size: 20px;
+  }
+
+  .form-check-input{
+    margin-left: -100px;
+    margin-top: 10px;
+  }
+  
