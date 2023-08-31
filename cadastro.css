@@ -7,14 +7,25 @@
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    
 
   }
   .container {
     color: #ffffff;
+
   }
   .titulo{
     text-align: center;
   }
+  .form-group{
+    max-width: 700px;
+    justify-content: center;
+    align-items: center;
+text-align: left;
+font-size: 20px;
+
+  }
+  
   .login-container {
     background-size: cover;
     background-position: center;
@@ -28,36 +39,13 @@
   }
 
 
-
-
-
 h2 {
     margin-bottom: 20px;
 }
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-check {
-    margin-top: 10px;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0056b3;
+.fundo{
+    font-size: 20px;
+    height: 5px;
+   color: rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
 }
