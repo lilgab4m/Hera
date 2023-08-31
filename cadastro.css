@@ -1,15 +1,21 @@
 
   body {
-    background-image: url(img/FundoCadastro1.jpg);
+    background-image: url(img/FundoCadastro3.jpg);
     background-color: #f8f9fa;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
+
+  }
+  .container {
+    color: #ffffff;
+  }
+  .titulo{
+    text-align: center;
   }
   .login-container {
-
     background-size: cover;
     background-position: center;
     border-radius: 10px;
