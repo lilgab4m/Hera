@@ -247,3 +247,46 @@ footer {
         font-size: 2vh;
     }
 }
+
+/* NEWS */
+#newsletter-container {
+    background-color: #DFDFDF;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #news-form {
+    max-width: 600px;
+    margin: 15px auto;
+  }
+  
+  #news-form i {
+    font-size: 1.5em;
+  }
+  
+  #news-form .btn {
+    color: #000000;
+  }
+  
+  #social-container {
+    margin: 20px auto;
+  }
+  
+  #social-container i {
+    font-size: 1.5em;
+    margin: 10px;
+    cursor: pointer;
+    color: #000000;
+    transition: .3s;
+  }
+  
+  #social-container i:hover {
+    color: #C09578;
+  }
+  
+  /* COPY */
+  #copy-container {
+    text-align: center;
+    padding: 30px;
+  }
