@@ -20,6 +20,7 @@
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
+        
     }
 
     .product {
@@ -29,6 +30,7 @@
         margin-bottom: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         text-align: center;
+        width: 70%;
     }
 
     .product strong {
@@ -76,53 +78,42 @@
 </style>
 	<body>
         <div class="container">
-            <div class="product">
-		<div align="center">
-			Colar de Diamante <strong>R$ 1499,99</strong><br>
-			qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+        <div class="product">
+			Colar de Diamante <br>
+            <strong>R$ 1499,99</strong><br>
+			qtd: <input type="number" value="1" min="1" max="10" id="qtd1"><br>
 			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bifinho', document.getElementById('qtd1').value, '2.00', 1)"> Comprar </button>
-        </div>
 		</div>
-
-		<div align="center">
             <div class="product">
-			<br> Anel de Diamantes em 18k <strong>R$ 4864,00</strong><br>
-			qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
+			<br> Anel de Diamantes em 18k<br> <strong>R$ 4864,00</strong><br>
+			qtd: <input type="number" value="1" min="1" max="10" id="qtd2"><br>
 			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Areia_Sanitaria', document.getElementById('qtd2').value, '3.90', 2)"> Comprar </button>
-            </div>
-		</div>
-
-		<div align="center">
+            </div>	
             <div class="product">
-			<br>Anel flor com pedras naturais  <strong>R$ 5550,00</strong><br>
-			qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
+			<br>Anel flor com pedras naturais <br> <strong>R$ 5550,00</strong><br>
+			qtd: <input type="number" value="1" min="1" max="10" id="qtd3"><br>
 			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Ossinho', document.getElementById('qtd3').value, '11.90', 3)"> Comprar </button>
             </div>
-		</div>
-         <div align="center">
-            <div class="product">
-			<br>Brinco De Ouro <strong>R$ 389,90</strong><br>
-			qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
-			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Ossinho', document.getElementById('qtd3').value, '11.90', 3)"> Comprar </button>
-            </div>
-		</div>
-
-        <div align="center">
-            <div class="product">
-			<br>anel de ouro com perola natural <strong>R$ 1550,00</strong><br>
-			qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
-			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Ossinho', document.getElementById('qtd3').value, '11.90', 3)"> Comprar </button>
-            </div>
-		</div>
-
-        <div align="center">
-            <div class="product">
-			<br>anel de prata com diamantes  <strong>R$ 699,90</strong><br>
-			qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
-			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Ossinho', document.getElementById('qtd3').value, '11.90', 3)"> Comprar </button>
-            </div>
-		</div>
+		
         
+            
+            <div class="product">
+			<br>Brinco De Ouro <br><strong>R$ 389,90</strong><br>
+			qtd: <input type="number" value="1" min="1" max="10" id="qtd3"><br>
+			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Ossinho', document.getElementById('qtd3').value, '11.90', 3)"> Comprar </button>
+            </div>
+		
+            <div class="product">
+			<br>Anel de ouro com perola natural<br> <strong>R$ 1550,00</strong><br>
+			qtd: <input type="number" value="1" min="1" max="10" id="qtd3"><br>
+			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Ossinho', document.getElementById('qtd3').value, '11.90', 3)"> Comprar </button>
+            </div>
+		    <div class="product">
+			<br>Anel de prata com diamantes  <br><strong>R$ 699,90</strong><br>
+			qtd: <input type="number" value="1" min="1" max="10" id="qtd3"><br>
+			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Ossinho', document.getElementById('qtd3').value, '11.90', 3)"> Comprar </button>
+            </div>
+		
  
 		<p align="center">
 			<a href="carrinho.html"> Ver Carrinho de compras </a>
