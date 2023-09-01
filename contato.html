@@ -11,24 +11,53 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Minha Empresa</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nós</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                </ul>
+        <nav class="navbar">    
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <img src="img/texto.png" height="70px">
+                <div class="icons">
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </form>
+                    <!-- Login -->
+                    <a href=""><i class="bi bi-person-circle"></i></a>
+                    <!-- Coração -->
+                    <a href=""><i class="bi bi-heart"></i></a>
+    
+                    <!-- Carrinho de Compra -->
+                    <a href=""><i class="bi bi-cart"> R$: 1230,00</i></a>
+                </div>
             </div>
+            <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                    Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                    Produtos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                    Promoções
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                    Blog
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                    Contato
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -49,30 +78,59 @@
                         <label for="mensagem">Mensagem:</label>
                         <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div class="mt-3 ">
+                       <button type="button" class="btn btn-light">enviar 
+                            </div>
                 </form>
             </div>
             <div class="col-md-6">
                 <h2>Informações de Contato</h2>
                 <address>
                     <strong>Minha Empresa</strong><br>
-                    123 Rua da Empresa<br>
-                    Cidade, Estado, CEP<br>
+                    Av. Santos Dumont, 300 - Ipiranguinha, Santo André - SP, 09015-320<br>
                 </address>
                 <p>
-                    <strong>E-mail:</strong> <a href="mailto:contato@minhaempresa.com">contato@minhaempresa.com</a><br>
-                    <strong>Telefone:</strong> (123) 456-7890<br>
+                    <strong>E-mail:</strong> <a href="mailto:Hera@faleconosco.com.br">Hera@faleconosco.com.br</a><br>
+                    <strong>Telefone:</strong> (11) 4002-8922<br>
                 </p>
                 <div class="embed-responsive embed-responsive-16by9">
                     <!-- Substitua a URL abaixo pelo seu mapa incorporado -->
-                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-70.123456!3d40.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDE3JzQ0LjYiTiA3MMKwMjInMjcuOSJX!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.274169426714!2d-46.521337725290714!3d-23.66615137872796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4279205f949b%3A0xb4f0ae2a39069537!2sAv.%20Santos%20Dumont%2C%20300%20-%20Vila%20Vilma%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009015-320!5e0!3m2!1spt-BR!2sbr!4v1693572675436!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="text-center bg-light py-4">
-        <p>&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
+    <footer id="footer container-fluid">
+        <div class="galery">
+            <img src="img/footer3.png">
+            <img src="img/footer4.png">
+            <img src="img/footer1.png">
+            <img src="img/footer2.png">
+        </div>
+        <div class="container-footer">
+            <div class="footer-content">
+                <h3>Páginas</h3>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><a href="index.html" class="secondary-color">Home</a></li>
+                  <li class="mb-2"><a href="index.html" class="secondary-color">Categorias</a></li>
+                  <li class="mb-2"><a href="index.html" class="secondary-color">Promoções</a></li>
+                  <li class="mb-2"><a href="index.html" class="secondary-color">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <ul class="list-unstyled">
+                  <li class="mb-2"><a href="termos.html" class="secondary-color">Política de Privacidade</a></li>
+                  <li class="mb-2"><a href="Privacidade.html" class="secondary-color">Política de Entregas</a></li>
+                  <li class="mb-2"><a href="P.Entrega.html">
+                    Rastreie seu pedido</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <p class="secondary-color">Qualquer dúvida estamos a disposição:</p>
+                <p class="store-phone" id="telefone"><i class="bi bi-telephone"></i> (11) 4002-8922</p>
+            </div>
+        </div>
     </footer>
 
     <!-- Adicione os links para os arquivos JavaScript do Bootstrap (opcional) -->
