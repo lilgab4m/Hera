@@ -29,9 +29,91 @@
                 <a href=""><i class="bi bi-heart"></i></a>
 
                 <!-- Carrinho de Compra -->
-                <a href="carrinho.html"><i class="bi bi-cart"> R$: 1230,00</i></a>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart"> R$: 1230,00</i></button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Seus Produtos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- Carrinho de Compras -->
+                        <div class="col-md-6">
+                        <ul class="cart-list">
+                            <!-- Itens do carrinho serão adicionados aqui -->
+                        </ul>
+                        <p>Total: R$<span class="cart-total">0.00</span></p>
+                    </div>
+                </div>
             </div>
         </div>
+        <style>
+            .container {
+                margin-top: 30px;
+            }
+    
+            h1 {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+    
+            .product-list, .cart-list {
+                list-style: none;
+                padding: 0;
+            }
+    
+            .product-list li, .cart-list li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                border: 1px solid #ccc;
+                margin-bottom: 10px;
+            }
+    
+            .product-list li button, .cart-list li button {
+                width: 100px;
+            }
+    
+            .cart-total {
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-top: 10px;
+            }
+    
+            .product-image {
+                max-width: 50px;
+                max-height: 50px;
+                margin-right: 10px;
+            }
+        </style>
+        <script>
+            // Função para adicionar um item ao carrinho
+            function addToCart(name, price) {
+                const cartList = document.querySelector('.cart-list');
+                const cartTotal = document.querySelector('.cart-total');
+    
+                // Cria um novo elemento de lista para o carrinho
+                const cartItem = document.createElement('li');
+                cartItem.innerText = `${name} - R$${price.toFixed(2)}`;
+                cartList.appendChild(cartItem);
+    
+                // Atualiza o total do carrinho
+                const currentTotal = parseFloat(cartTotal.innerText);
+                const newTotal = currentTotal + price;
+                cartTotal.innerText = newTotal.toFixed(2);
+            }
+    
+            // Adiciona um evento de clique aos botões "Adicionar" na lista de produtos
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const productItem = button.parentElement;
+                    const name = productItem.getAttribute('data-name');
+                    const price = parseFloat(productItem.getAttribute('data-price'));
+                    addToCart(name, price);
+                });
+            });
+        </script>
         <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
