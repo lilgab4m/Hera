@@ -205,7 +205,25 @@
                 <p class="secondary-color">Qualquer dúvida estamos a disposição:</p>
                 <p class="store-phone" id="telefone"><i class="bi bi-telephone"></i> (11) 4002-8922</p>
             </div>
-            
+            <script>
+        // Função para adicionar um produto ao carrinho
+        function adicionarAoCarrinho(produto) {
+            // Aqui você pode implementar a lógica para adicionar o produto ao carrinho
+            // Por exemplo, você pode adicionar o produto a um array que representa o carrinho
+            alert('Produto ' + produto + ' adicionado ao carrinho!');
+        }
+
+        // Adicionar eventos de clique para os botões "Comprar"
+        document.getElementById('comprar-produto1').addEventListener('click', function () {
+            adicionarAoCarrinho('Colar De Diamantes');
+        });
+
+        document.getElementById('comprar-produto2').addEventListener('click', function () {
+            adicionarAoCarrinho('Anel Com Diamantes Em Ouro 18k');
+        });
+
+        // Adicione eventos para outros produtos conforme necessário
+    </script>
         </div>
     </footer>
 </body>
