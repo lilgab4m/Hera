@@ -69,9 +69,9 @@ body {
     width: 60%;
 }
 
-.side-img {
-    width: 40%;
-    height: 100%;
+#side-img {
+    width: 30%;
+    /* height: 100%; */
 }
 
 .content-product img {
@@ -105,7 +105,7 @@ body {
 /* Desconto */
 
 .desconto {
-    padding: 30px;
+    padding-top: 30px;
     margin-top: 40px;
     background-color: black;
     display: flex;
@@ -115,7 +115,7 @@ body {
 }
 
 .desconto img {
-    padding-left: 0;
+    padding-bottom: -30px;
     width: 35%;
 }
 
