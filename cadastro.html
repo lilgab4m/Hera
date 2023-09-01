@@ -7,53 +7,109 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="cadastro.css">
 
+
+    <style>
+        body {
+            background-color: #f7f7f7;
+        }
+        .container {
+            background-color: #ffffff12;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.167);
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+
 </head>
 <body>
-    
+    <nav class="navbar">    
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <img src="img/texto.png" height="70px">
+            <div class="icons">
+                <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <i class="bi bi-search"></i>
+                </form>
+                <!-- Login -->
+                <a href=""><i class="bi bi-person-circle"></i></a>
+                <!-- Coração -->
+                <a href=""><i class="bi bi-heart"></i></a>
+
+                <!-- Carrinho de Compra -->
+                <a href=""><i class="bi bi-cart"> R$: 1230,00</i></a>
+            </div>
+        </div>
+        <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                Produtos
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                Promoções
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                Blog
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                Contato
+                </a>
+            </li>
+        </ul>
+    </nav>
     <div class="container">
-    <div class="rola">
         <h2>Cadastro de Usuário</h2>
-    </div>
-    <center>
-        <form>
+        <form class="form">
             <div class="form-group">
-                <label for="nome">Nome:</label>
+                <p for="nome">Nome:</p>
                 <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
             </div>
             <div class="form-group">
-                <label for="sobrenome">Sobrenome:</label>
+                <p for="sobrenome">Sobrenome:</p>
                 <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome">
             </div>
             <div class="form-group">
-                <label for="email">Email:</label>
+                <p for="email">Email:</p>
                 <input type="email" class="form-control" id="email" placeholder="Digite seu email">
             </div>
             <div class="form-group">
-                <label for="senha">Senha:</label>
+                <p for="senha">Senha:</p>
                 <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
             </div>
             <div class="form-group">
-                <label for="confirmarSenha">Confirmar Senha:</label>
+                <p for="confirmarSenha">Confirmar Senha:</p>
                 <input type="password" class="form-control" id="confirmarSenha" placeholder="Confirme sua senha">
             </div>
-            <div class="fundo">     
-                <head>
+            <div class="fundo">
+                    <input type="checkbox" class="form-check-input" id="termos">
                     <style>
-                    .mt-3 a {
-                      color: rgb(255, 255, 255); /* Define a cor do link para preto */
-                      text-decoration: none; /* Remove sublinhado do link (opcional) */
-                    }
-                  </style>
-                </head>
-                <input type="checkbox" class="form-check-input" id="termos">
-                  <p class="mt-3"><a href="termos.html">Termos De Usuário</a></p>
-                </div><br>
-                <a href="index.html"><button type="button" class="btn btn-light">Cadastre-se</button></a>
+                        .mt-3 a {
+                            color: rgb(255, 255, 255); /* Define a cor do link para preto */
+                            text-decoration: none; /* Remove sublinhado do link (opcional) */
+                        }
+                    </style>
+                <p class="mt-3"><a href="termos.html">Termos De Usuário</p></a>
+            </div>
+            <center>
+                <a href="index.html" class="btn btn-light">Cadastre-se</a>
+            </center>
+            <br>
         </form>
-        <p>Já possui uma conta? <a href="login.html">Faça login aqui</a></p>
-    </div>
-        </center>
-
+        <p id="login">Já possui uma conta? <a href="login.html">Faça login aqui</a></p>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
