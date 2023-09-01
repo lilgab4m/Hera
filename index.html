@@ -27,11 +27,51 @@
                 <a href="login.html"><i class="bi bi-person-circle"></i></a>
                 <!-- Coração -->
                 <a href=""><i class="bi bi-heart"></i></a>
-
                 <!-- Carrinho de Compra -->
-                <a href="carrinho.html"><i class="bi bi-cart"> R$: 1230,00</i></a>
+                <a href="carrinho copy.html"><i class="bi bi-cart"> R$ 1200,00</i></a>
             </div>
         </div>
+        <style>
+            .container {
+                margin-top: 30px;
+            }
+    
+            h1 {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+    
+            .product-list, .cart-list {
+                list-style: none;
+                padding: 0;
+            }
+    
+            .product-list li, .cart-list li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                border: 1px solid #ccc;
+                margin-bottom: 10px;
+            }
+    
+            .product-list li button, .cart-list li button {
+                width: 100px;
+            }
+    
+            .cart-total {
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-top: 10px;
+            }
+    
+            .product-image {
+                max-width: 50px;
+                max-height: 50px;
+                margin-right: 10px;
+            }
+        </style>
+     
         <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
@@ -205,7 +245,25 @@
                 <p class="secondary-color">Qualquer dúvida estamos a disposição:</p>
                 <p class="store-phone" id="telefone"><i class="bi bi-telephone"></i> (11) 4002-8922</p>
             </div>
-            
+            <script>
+        // Função para adicionar um produto ao carrinho
+        function adicionarAoCarrinho(produto) {
+            // Aqui você pode implementar a lógica para adicionar o produto ao carrinho
+            // Por exemplo, você pode adicionar o produto a um array que representa o carrinho
+            alert('Produto ' + produto + ' adicionado ao carrinho!');
+        }
+
+        // Adicionar eventos de clique para os botões "Comprar"
+        document.getElementById('comprar-produto1').addEventListener('click', function () {
+            adicionarAoCarrinho('Colar De Diamantes');
+        });
+
+        document.getElementById('comprar-produto2').addEventListener('click', function () {
+            adicionarAoCarrinho('Anel Com Diamantes Em Ouro 18k');
+        });
+
+        // Adicione eventos para outros produtos conforme necessário
+    </script>
         </div>
     </footer>
 </body>

@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .product {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .product strong {
+        font-size: 24px;
+        color: #333;
+    }
+
+    .product input {
+        width: 40px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .product button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .product button:hover {
+        background-color: #0056b3;
+    }
+
+    .link-to-cart {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .link-to-cart a {
+        text-decoration: none;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .link-to-cart a:hover {
+        background-color: #555;
+    }
+</style>
+	<body>
+        <div class="container">
+            <div class="product">
+		<div align="center">
+			Colar de Diamante <strong>R$ 1499,99</strong><br>
+			qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Bifinho', document.getElementById('qtd1').value, '2.00', 1)"> Comprar </button>
+        </div>
+		</div>
+
+		<div align="center">
+            <div class="product">
+			<br> Anel de Diamantes em 18k <strong>R$ 4864,00</strong><br>
+			qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
+			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Areia_Sanitaria', document.getElementById('qtd2').value, '3.90', 2)"> Comprar </button>
+            </div>
+		</div>
+
+		<div align="center">
+            <div class="product">
+			<br>Anel flor com pedras naturais  <strong>R$ 5550,00</strong><br>
+			qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
+			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Ossinho', document.getElementById('qtd3').value, '11.90', 3)"> Comprar </button>
+            </div>
+		</div>
+         <div align="center">
+            <div class="product">
+			<br>Brinco De Ouro <strong>R$ 389,90</strong><br>
+			qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
+			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Ossinho', document.getElementById('qtd3').value, '11.90', 3)"> Comprar </button>
+            </div>
+		</div>
+
+        <div align="center">
+            <div class="product">
+			<br>anel de ouro com perola natural <strong>R$ 1550,00</strong><br>
+			qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
+			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Ossinho', document.getElementById('qtd3').value, '11.90', 3)"> Comprar </button>
+            </div>
+		</div>
+
+        <div align="center">
+            <div class="product">
+			<br>anel de prata com diamantes  <strong>R$ 699,90</strong><br>
+			qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
+			<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Ossinho', document.getElementById('qtd3').value, '11.90', 3)"> Comprar </button>
+            </div>
+		</div>
+        
+ 
+		<p align="center">
+			<a href="carrinho.html"> Ver Carrinho de compras </a>
+		</p>	
+				
+		<script>
+			function AddCarrinho(produto, qtd, valor, posicao)
+			{
+				localStorage.setItem("produto" + posicao, produto);
+				localStorage.setItem("qtd" + posicao, qtd);
+				valor = valor * qtd;
+				localStorage.setItem("valor" + posicao, valor);
+				alert("Produto adicionado ao carrinho!");
+			}
+		</script>
+
+	</body>
+</html>

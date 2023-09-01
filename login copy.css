@@ -1,0 +1,31 @@
+  body {
+ background-image: url(img/teste2.jpg);
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+ .button{
+    
+    
+ }
+  .login-container {
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: #ffffff; /* Ajuste a cor do texto para que seja legível na imagem de fundo */
+  }
+  .baixo{
+    font-size: 20px;
+  }
+  
+    
+  
