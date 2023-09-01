@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <!-- Adicione os links para os arquivos CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Adicione seu arquivo CSS personalizado, se desejar -->
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Minha Empresa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Entre em Contato</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Informações de Contato</h2>
+                <address>
+                    <strong>Minha Empresa</strong><br>
+                    123 Rua da Empresa<br>
+                    Cidade, Estado, CEP<br>
+                </address>
+                <p>
+                    <strong>E-mail:</strong> <a href="mailto:contato@minhaempresa.com">contato@minhaempresa.com</a><br>
+                    <strong>Telefone:</strong> (123) 456-7890<br>
+                </p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!-- Substitua a URL abaixo pelo seu mapa incorporado -->
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-70.123456!3d40.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDE3JzQ0LjYiTiA3MMKwMjInMjcuOSJX!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center bg-light py-4">
+        <p>&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Adicione os links para os arquivos JavaScript do Bootstrap (opcional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
